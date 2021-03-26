@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QCustomPlot" name="widget" native="true">
+   <widget class="QCustomPlot" name="PlotView" native="true">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -42,7 +42,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="bx_x_2"/>
+      <widget class="QDoubleSpinBox" name="bx_x"/>
      </item>
      <item>
       <widget class="QLabel" name="label_2">

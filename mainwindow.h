@@ -19,11 +19,10 @@ public:
      void zeichne();    //Zeichnen
 private slots:
      void on_btn_add_clicked();
-
      void on_btn_del_clicked();
 
 private:
     Ui::MainWindow *ui;
-    QVector<double>X,Y;
+    QVector<double>Vect_X,Vect_Y;
 };
 #endif // MAINWINDOW_H
