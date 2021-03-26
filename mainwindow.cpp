@@ -26,6 +26,7 @@ void MainWindow::addPunkt(double x, double y)
 void MainWindow::loeschen()
 {
     Vect_X.clear();
+    Vect_Y.clear();
 }
 
 void MainWindow::zeichne()
@@ -44,5 +45,6 @@ void MainWindow::on_btn_add_clicked()
 
 void MainWindow::on_btn_del_clicked()
 {
-
+    loeschen();
+    zeichne();
 }
