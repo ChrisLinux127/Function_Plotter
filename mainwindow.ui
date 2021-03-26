@@ -13,10 +13,84 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCustomPlot" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>741</width>
+      <height>471</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>500</y>
+      <width>691</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>X:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="bx_x_2"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Y:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="bx_y"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_add">
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_del">
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
