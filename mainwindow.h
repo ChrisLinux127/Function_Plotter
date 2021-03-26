@@ -18,6 +18,8 @@ public:
      void loeschen();   //Punkt loeschen
      void zeichne();    //Zeichnen
 private slots:
+     void on_rbnt_tan_clicked();
+
      void on_rbnt_sin_clicked();
 
      void on_rbnt_cos_clicked();
@@ -31,10 +33,6 @@ private slots:
      void on_bx_xMin_valueChanged(double arg1);
 
      void on_bx_yMin_valueChanged(double arg1);
-
-
-     void on_rbnt_tan_clicked();
-
 private:
     int graph_index;
     double A;
