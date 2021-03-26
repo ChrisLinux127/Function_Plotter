@@ -14,8 +14,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void addPunkt(double x,double y); //Punkt hinzufügen
+     void loeschen();   //Punkt loeschen
+     void zeichne();    //Zeichnen
+private slots:
+     void on_btn_add_clicked();
+
+     void on_btn_del_clicked();
 
 private:
     Ui::MainWindow *ui;
+    QVector<double>X,Y;
 };
 #endif // MAINWINDOW_H
