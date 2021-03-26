@@ -8,8 +8,12 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     //Plot Einstellungen:
     ui->PlotView->addGraph(); //Graph hinzufügen
-    ui->PlotView->graph(0)->setScatterStyle(QCPScatterStyle::ssCircle); //Einstellung von Graph 0
+    ui->PlotView->graph(0)->setScatterStyle(QCPScatterStyle::ssCross); //Einstellung von Graph 0
     ui->PlotView->graph(0)->setLineStyle(QCPGraph::lsNone);
+    ui->PlotView->xAxis->setLabel("x");
+    ui->PlotView->yAxis->setLabel("f(x)");
+    ui->PlotView->xAxis->setRange(-5,5); //STandard
+    ui->PlotView->yAxis->setRange(-5,5);
 }
 //Destruktor:
 MainWindow::~MainWindow()
