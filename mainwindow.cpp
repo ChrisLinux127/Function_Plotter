@@ -38,7 +38,8 @@ void MainWindow::zeichne()
 //Handler of Click() Events:
 void MainWindow::on_btn_add_clicked()
 {
-
+    addPunkt(ui->bx_x->value(),ui->bx_y->value());
+    zeichne();
 }
 
 void MainWindow::on_btn_del_clicked()
