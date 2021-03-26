@@ -18,8 +18,11 @@ public:
      void loeschen();   //Punkt loeschen
      void zeichne();    //Zeichnen
 private slots:
-     void on_btn_add_clicked();
-     void on_btn_del_clicked();
+
+
+
+
+     void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

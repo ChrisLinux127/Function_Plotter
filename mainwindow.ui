@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1056</width>
+    <height>713</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,56 +17,76 @@
    <widget class="QCustomPlot" name="PlotView" native="true">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>741</width>
-      <height>471</height>
+      <x>10</x>
+      <y>0</y>
+      <width>1041</width>
+      <height>521</height>
      </rect>
     </property>
    </widget>
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>500</y>
-      <width>691</width>
-      <height>51</height>
+      <x>790</x>
+      <y>540</y>
+      <width>258</width>
+      <height>122</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_5">
        <property name="text">
-        <string>X:</string>
+        <string>Max Y:</string>
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QDoubleSpinBox" name="bx_x"/>
+     <item row="2" column="1">
+      <widget class="QDoubleSpinBox" name="bx_xMax"/>
      </item>
-     <item>
+     <item row="2" column="3">
+      <widget class="QDoubleSpinBox" name="bx_YMax"/>
+     </item>
+     <item row="2" column="0">
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Y:</string>
+        <string>Max X:</string>
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QDoubleSpinBox" name="bx_y"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_add">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_6">
        <property name="text">
-        <string>Add</string>
+        <string>Min X:</string>
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QPushButton" name="btn_del">
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_7">
        <property name="text">
-        <string>Clear</string>
+        <string>Min Y:</string>
        </property>
       </widget>
+     </item>
+     <item row="4" column="0" colspan="4">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Übernehmen</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="3">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Fenster Einstellungen:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QDoubleSpinBox" name="bx_xMin"/>
+     </item>
+     <item row="3" column="3">
+      <widget class="QDoubleSpinBox" name="bx_yMin"/>
      </item>
     </layout>
    </widget>
@@ -76,7 +96,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1056</width>
      <height>21</height>
     </rect>
    </property>

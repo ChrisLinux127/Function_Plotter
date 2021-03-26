@@ -7,9 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //Input einstellungen:
-    ui->bx_x->setMinimum(std::numeric_limits<double>::lowest()); //absolut minimale werte zulassen
-    ui->bx_y->setMinimum(std::numeric_limits<double>::lowest());  //absolut minimale werte zulassen
+
     //Plot Einstellungen:
     ui->PlotView->addGraph(); //Graph hinzufügen
     ui->PlotView->graph(0)->setScatterStyle(QCPScatterStyle::ssCross); //Einstellung von Graph 0
@@ -44,15 +42,11 @@ void MainWindow::zeichne()
     ui->PlotView->update();
 }
 
-//Handler of Click() Events:
-void MainWindow::on_btn_add_clicked()
-{
-    addPunkt(ui->bx_x->value(),ui->bx_y->value());
-    zeichne();
-}
+//Btn Events:
 
-void MainWindow::on_btn_del_clicked()
+void MainWindow::on_pushButton_clicked()
 {
-    loeschen();
-    zeichne();
+    //Input einstellungen:
+    ui->bx_xMin->setMinimum(std::numeric_limits<double>::lowest());
+
 }
