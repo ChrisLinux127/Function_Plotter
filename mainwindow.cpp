@@ -7,6 +7,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //Input Einstellungen:
+    ui->bx_xMin->setMinimum(std::numeric_limits<double>::lowest());
+    ui->bx_yMin->setMinimum(std::numeric_limits<double>::lowest());
 
     //Plot Einstellungen:
     ui->PlotView->addGraph(); //Graph hinzufügen
@@ -46,7 +49,8 @@ void MainWindow::zeichne()
 
 void MainWindow::on_pushButton_clicked()
 {
-    //Input einstellungen:
-    ui->bx_xMin->setMinimum(std::numeric_limits<double>::lowest());
-
+ui->PlotView->xAxis->setRange(ui->bx_xMin->value(),ui->bx_xMax->value());
+ui->PlotView->yAxis->setRange(ui->bx_yMin->value(),ui->bx_yMin->value());
+ui->PlotView->replot();
+ui->PlotView->update();
 }
